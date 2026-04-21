@@ -356,47 +356,40 @@
       font-size: 1rem;
       line-height: 1.35;
     }
+.partners {
+  background: #0b3c78;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    .partners {
-      background:
-        linear-gradient(135deg, #0b4a98, #083977 60%, #0a3b75);
-      color: white;
-      position: relative;
-      overflow: hidden;
-      padding: 30px 0;
-    }
-    .partners::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 18%),
-        radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 18%);
-      pointer-events: none;
-    }
-    .partners-wrap {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      gap: 16px;
-      text-align: center;
-    }
-    .partners-label {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-      color: rgba(255,255,255,0.95);
-    }
-    .partner-logos {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 12px;
-      align-items: center;
-      color: rgba(255,255,255,0.95);
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
+.partners h3 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.partner-logos img {
+  height: 42px;
+  max-width: 150px;
+  object-fit: contain;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.partner-logos img:hover {
+  transform: scale(1.05);
+}
 
     .footer {
       background: linear-gradient(180deg, #072846, #041d33);
@@ -630,68 +623,60 @@
     </div>
   </section>
 
-  <section class="partners" id="partners">
-    <div class="container partners-wrap">
-      <div class="partners-label">Our Partners</div>
-      <div class="partner-logos">
-        <div>Hewlett Packard Enterprise</div>
-        <div>Aruba</div>
-        <div>Fortinet</div>
-        <div>VMware</div>
-        <div>Microsoft</div>
-        <div>Veeam</div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer" id="contact">
-    <div class="container footer-grid">
-      <div>
-        <img class="footer-logo" src="logo.png" alt="Kencana Solusi Teknologi logo" />
-        <div style="max-width:320px; color: rgba(255,255,255,0.8);">
-          PT. Kencana Solusi Teknologi is committed to delivering reliable IT solutions and support for business growth.
-        </div>
-        <div class="socials">
-          <span>in</span>
-          <span>f</span>
-          <span>ig</span>
-        </div>
-      </div>
-
-      <div>
-        <h4>Company</h4>
-        <div class="footer-links">
-          <a href="#about">About Us</a>
-          <a href="#partners">Our Team</a>
-          <a href="#partners">Partners</a>
-          <a href="#contact">Careers</a>
-        </div>
-      </div>
-
-      <div>
-        <h4>Solutions</h4>
-        <div class="footer-links">
-          <span>Network Infrastructure</span>
-          <span>Server & Storage</span>
-          <span>Security Solutions</span>
-          <span>Cloud Solutions</span>
-          <span>Software Solutions</span>
-        </div>
-      </div>
-
-      <div>
-        <h4>Contact Us</h4>
-        <div class="footer-links">
-          <span>Indonesia</span>
-          <span>+62 896 3542 5388</span>
-          <span>sales@kstech.id</span>
-        </div>
+<section class="partners" id="partners">
+  <h3>SUPPORTED TECHNOLOGIES</h3>
+  <div class="partner-logos">
+    <img src="images/hpe.png" alt="HPE">
+    <img src="images/cisco.png" alt="Cisco">
+    <img src="images/huawei.png" alt="Huawei">
+    <img src="images/microsoft.png" alt="Microsoft">
+    <img src="images/tplink.png" alt="TP-Link">
+  </div>
+</section>
+  
+ <footer class="footer" id="contact">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="logo.png" alt="Kencana Solusi Teknologi logo" />
+      <div style="max-width:320px; color: rgba(255,255,255,0.8);">
+        PT. Kencana Solusi Teknologi
       </div>
     </div>
 
-    <div class="container footer-bottom">
-      © 2026 PT. Kencana Solusi Teknologi. All rights reserved.
+    <div>
+      <h4>Company</h4>
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#partners">Our Team</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Careers</a>
+      </div>
     </div>
-  </footer>
+
+    <div>
+      <h4>Solutions</h4>
+      <div class="footer-links">
+        <span>Network Infrastructure</span>
+        <span>Server & Storage</span>
+        <span>Security Solutions</span>
+        <span>Cloud Solutions</span>
+        <span>Software Solutions</span>
+      </div>
+    </div>
+
+    <div>
+      <h4>Contact Us</h4>
+      <div class="footer-links">
+        <span>Indonesia</span>
+        <span>+62 896 3542 5388</span>
+        <span>sales@kstech.id</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    © 2026 PT. Kencana Solusi Teknologi. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
