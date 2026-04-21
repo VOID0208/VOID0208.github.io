@@ -4,153 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT. Kencana Solusi Teknologi</title>
-  <meta
-    name="description"
-    content="PT. Kencana Solusi Teknologi is a system integrator focused on networking infrastructure, IT hardware, and software solutions."
-  />
+  <meta name="description" content="PT. Kencana Solusi Teknologi - Networking, IT Infrastructure, Security & Software Solutions." />
+
   <style>
-    :root {
-      --navy: #0d3b66;
-      --blue: #1f5faf;
-      --red: #d62828;
-      --text: #18324a;
-      --muted: #5f7284;
-      --line: #d9e1e8;
-      --bg: #f7f9fc;
-      --white: #ffffff;
-      --shadow: 0 18px 50px rgba(13, 59, 102, 0.08);
-      --radius: 22px;
-      --max: 1150px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top right, rgba(31, 95, 175, 0.06), transparent 25%),
-        radial-gradient(circle at bottom left, rgba(214, 40, 40, 0.05), transparent 20%),
-        var(--bg);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f8fc;
+      color:#17324a;
     }
 
     .container {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .hero {
+      background:#0d3b66;
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .hero img {
+      max-width:320px;
+      background:white;
+      padding:15px;
+      border-radius:15px;
+      margin-bottom:20px;
+    }
+
+    .hero h1 {
+      margin:0;
+      font-size:40px;
     }
 
     .section {
-      padding: 82px 0;
+      padding:60px 20px;
+      text-align:center;
     }
 
-    .section-title {
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
-      line-height: 1.15;
-      margin: 0 0 14px;
-      color: var(--navy);
+    .grid {
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
     }
 
-    .section-subtitle {
-      max-width: 700px;
-      margin: 0 0 36px;
-      color: var(--muted);
-      font-size: 1rem;
+    .card {
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      width:260px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
     }
 
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(247, 249, 252, 0.86);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(13, 59, 102, 0.08);
+    .footer {
+      background:#072846;
+      color:white;
+      text-align:center;
+      padding:20px;
     }
+  </style>
+</head>
 
-    .nav {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
+<body>
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
+<section class="hero">
+  <img src="logo.png" alt="Logo">
+  <h1>Kencana Solusi Teknologi</h1>
+  <p>Networking • Security • IT Solutions</p>
+</section>
 
-    .brand-badge {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: white;
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-      box-shadow: 0 10px 24px rgba(31, 95, 175, 0.22);
-      flex-shrink: 0;
-    }
+<section class="section">
+  <h2>Our Solutions</h2>
 
-    .brand-text {
-      min-width: 0;
-    }
+  <div class="grid">
+    <div class="card">
+      <h3>Networking</h3>
+      <p>Router, Switch, Infrastructure Setup</p>
+    </div>
 
-    .brand-text strong {
-      display: block;
-      color: var(--navy);
-      font-size: 0.98rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    <div class="card">
+      <h3>Security</h3>
+      <p>Firewall, Antivirus, Protection</p>
+    </div>
 
-    .brand-text span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.82rem;
-    }
+    <div class="card">
+      <h3>IT Supply</h3>
+      <p>Hardware & Software</p>
+    </div>
+  </div>
+</section>
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
+<section class="section">
+  <h2>Contact</h2>
+  <p>+62 XXX XXX</p>
+  <p>info@kstech.id</p>
+</section>
 
-    .nav-links a {
-      color: var(--muted);
-      font-size: 0.95rem;
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
+<div class="footer">
+  © 2026 Kencana Solusi Teknologi
+</div>
 
-    .nav-links a:hover {
-      color: var(--navy);
-      transform: translateY(-1px);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10
+</body>
+</html>
